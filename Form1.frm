@@ -759,8 +759,8 @@ Private Sub infoCompare(cmdIdx As Integer, recvData As String)
     If cmdIdx = 0 Then
         arrProductModel = Array("UNKNOWN", "Max4_70", "Max4_65C", _
                             "Max4_55B", "Max4_65B", "Max4_75B", _
-                            "Max4_70S", "Max4_75S", "Max5_55_938", _
-                            "Max4_X70", "Max5_65_938")
+                            "Max4_70S", "Max4_75S", "Max455", _
+                            "Max4_X70", "Max465", "U55", "U65", "U75")
         lbTVInfo(0).Caption = arrProductModel(Val(recvData))
 
         If gintProductModel = Val(recvData) Then
@@ -829,7 +829,8 @@ Private Sub infoCompare(cmdIdx As Integer, recvData As String)
     If cmdIdx = 5 Then
         arrPanelModel = Array("X4_70_2D", "X4_70_3D", "X3_55_120", _
                             "X3_55_60", "X4_65_Curve", "X4_55_Blade", _
-                            "X4_70S", "X4_75S", "X4_55_938", "X4_65_938")
+                            "X4_70S", "X4_75S", "X4_55", "X4_65", _
+                            "UNQ_55", "UNQ_65", "UNQ_75")
         lbTVInfo(5).Caption = arrPanelModel(Val(recvData) - 1)
                             
         If gintPanelModel = Val(recvData) Then
