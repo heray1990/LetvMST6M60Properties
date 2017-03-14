@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "mscomm32.ocx"
 Begin VB.Form Form1 
-   Caption         =   "Letv Max65 属性烧录与读写工具"
+   Caption         =   "Letv MST6M60 属性烧录与读写工具"
    ClientHeight    =   4515
    ClientLeft      =   60
    ClientTop       =   750
@@ -12,11 +12,20 @@ Begin VB.Form Form1
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton CommandStart 
       Caption         =   "开始"
-      Height          =   400
-      Left            =   5715
-      TabIndex        =   17
-      Top             =   3900
-      Width           =   1635
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   10.5
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   5760
+      TabIndex        =   18
+      Top             =   3840
+      Width           =   1575
    End
    Begin VB.Frame Frame1 
       Caption         =   "Monitor 属性信息"
@@ -408,7 +417,7 @@ Begin VB.Form Form1
       ForeColor       =   &H80000008&
       Height          =   450
       Left            =   2520
-      TabIndex        =   18
+      TabIndex        =   17
       Top             =   3885
       Width           =   3105
    End
