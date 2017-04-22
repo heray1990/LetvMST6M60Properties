@@ -3,7 +3,7 @@
 	<common baud="115200" id="6"/>
 	<MonitorProductModel>13</MonitorProductModel>
 	<MonitorBacklightType>2</MonitorBacklightType>
-	<MonitorBoardModel>7</MonitorBoardModel>
+	<MonitorBoardModel>4</MonitorBoardModel>
 	<MonitorHardwareVersion>2</MonitorHardwareVersion>
 	<Monitor2D3DModel>2</Monitor2D3DModel>
 	<MonitorPanelModel>13</MonitorPanelModel>

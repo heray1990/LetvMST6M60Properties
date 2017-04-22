@@ -1,7 +1,7 @@
 VERSION 5.00
 Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "mscomm32.ocx"
 Begin VB.Form Form1 
-   Caption         =   "Letv MST6M60 属性烧录与读写工具"
+   Caption         =   "Letv MST6M60 属性读写工具"
    ClientHeight    =   4515
    ClientLeft      =   60
    ClientTop       =   750
@@ -497,7 +497,7 @@ On Error GoTo ErrExit
         ClearComBuf
         Log_Info CStr(arrHint(i - 1))
         GetProperty Int(i)
-        DelayMS 500
+        'DelayMS 500
         Call DelaySWithCmdFlag(cmdReceiveWaitS, isCmdDataRecv)
             
         If isCmdDataRecv = False Then
@@ -519,7 +519,7 @@ On Error GoTo ErrExit
     Log_Info CStr(arrHint(6))
     isReadingSwVer = True
     GetSwVer
-    DelayMS 500
+    'DelayMS 500
     Call DelaySWithCmdFlag(cmdReceiveWaitS, isCmdDataRecv)
             
     If isCmdDataRecv = False Then
